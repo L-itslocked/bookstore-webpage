@@ -69,6 +69,3 @@ section {
   background-color: var(--primary-color);
   border-radius: 0 0 5rem 5rem;
 }
-section:after {
-  background-color: var(--secondary-color);
-}
