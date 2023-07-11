@@ -57,11 +57,27 @@ main {
   padding: 10rem;
   border-radius: 5rem 5rem 0 0;
 }
+p {
+  font-family: var(--accent-font);
+}
 .hero {
   padding: 2rem;
   margin: 1rem;
 }
-
+.feature-img img {
+  height: 600px;
+  width: 400px;
+}
+.hero img {
+  width: 100px;
+  height: auto;
+}
+.title-col h1 {
+  font-family: var(--main-font);
+  width: 20vw;
+  font-size: 2.5rem;
+  letter-spacing: 0.05rem;
+}
 section {
   display: block;
   margin: 3rem;
@@ -69,3 +85,16 @@ section {
   background-color: var(--primary-color);
   border-radius: 0 0 5rem 5rem;
 }
+
+/* section::before {
+  content: "";
+  width: var(--inlineP);
+  aspect-ratio: 1;
+  background: var(--accent-color);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2) 100%, transparent);
+  position: absolute;
+  top: 100%;
+  color: purple;
+  clip-path: polygon(0 0, 100% 0, 0 100%);
+  right: 0;
+} */
