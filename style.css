@@ -1,13 +1,15 @@
 :root {
   --main-font: "Libre Caslon Text", serif;
   --accent-font: "Montserrat", sans-serif;
-  --primary-color: #f3e5d0;
+  --primary-color: #f8f3ee;
   --accent-color: #daaa63;
   --secondary-color: #2c1810;
   --background-color: #f3e5d0;
 }
+body {
+  background-color: var(--background-color);
+}
 nav {
-  margin: 10px auto;
   display: block;
 }
 h4 {
@@ -19,19 +21,38 @@ ul {
   list-style: none;
   display: inline-block;
 }
-
 li {
   display: inline-block;
 }
-
 .nav-center {
   background-color: var(--accent-color);
   color: var(--secondary-color);
   padding: 10px 25px;
-  margin: 0 15px;
   border-radius: 40px;
 }
 .nav-icons {
-  color: blue;
   text-align: right;
+}
+.vertical-text,
+h5 {
+  text-orientation: mixed;
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+}
+main {
+  background-color: var(--primary-color);
+  padding: 10rem;
+  border-radius: 5rem 5rem 0 0;
+}
+.hero {
+  padding: 2rem;
+  margin: 1rem;
+}
+
+section {
+  margin: 5rem auto;
+  display: block;
+}
+section:after {
+  background-color: var(--secondary-color);
 }
