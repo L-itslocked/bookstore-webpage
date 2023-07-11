@@ -89,19 +89,26 @@ section {
   margin: 1rem;
 }
 .feature-img img {
-  height: 600px;
-  width: 400px;
-  margin-left: 3rem;
-}
-.hero img {
-  width: 100px;
   height: auto;
+  width: 300px;
+  padding: 0 5rem 0 5rem;
+  /* margin: 0 
+  margin-left: 3rem;
+  margin-right: -10rem; */
 }
+
+/* .hero img {
+  width: 300px;
+  height: auto;
+} */
 .title-col h1 {
   font-family: var(--main-font);
   width: 20vw;
   font-size: 2.5rem;
   letter-spacing: 0.05rem;
+}
+.title-col {
+  margin: 7vw 3vw 7vw -3vw;
 }
 
 /* section::before {
