@@ -11,10 +11,12 @@ body {
 }
 nav {
   display: block;
+  margin: -8rem 0 4rem 0;
 }
-h4 {
+nav h4 {
   font-weight: bold;
   font-size: 20px;
+  margin: 0 3rem 0 -8rem;
 }
 
 ul {
@@ -24,14 +26,25 @@ ul {
 li {
   display: inline-block;
 }
-.nav-center {
+.nav-center:active,
+.nav-center:hover {
   background-color: var(--accent-color);
   color: var(--secondary-color);
   padding: 10px 25px;
   border-radius: 40px;
+  text-align: center;
+}
+.nav-center {
+  font-family: var(--accent-font);
+  padding-right: 2rem;
+  text-align: center;
 }
 .nav-icons {
   text-align: right;
+}
+.nav-icons:first-of-type {
+  color: green;
+  margin-left: 2rem;
 }
 .vertical-text,
 h5 {
@@ -50,8 +63,11 @@ main {
 }
 
 section {
-  margin: 5rem auto;
   display: block;
+  margin: 5rem;
+  padding: 5rem;
+  background-color: var(--primary-color);
+  border-radius: 0 0 5rem 5rem;
 }
 section:after {
   background-color: var(--secondary-color);
