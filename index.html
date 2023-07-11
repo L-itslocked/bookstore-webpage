@@ -35,20 +35,46 @@
     <div class="container">
       <div class="hero">
         <main class="shadow">
-          <nav>
+          <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+              <ul>
+                <li>
+                  <h4 class="nav-title navbar-brand">Bookery</h4>
+                </li>
+              </ul>
+              <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarNav"
+                aria-control="navbarNav"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+              ></button>
+              <span class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                  <li class="nav-center nav-item">
+                    <a class="nav-link" href="#"><p>books</p></a>
+                  </li>
+                  <li class="nav-center nav-item">
+                    <a class="nav-link" href="#"><p>audiobooks</p></a>
+                  </li>
+                  <li class="nav-center nav-item">
+                    <a class="nav-link" href="#"><p>must-haves</p></a>
+                  </li>
+                </ul>
+              </span>
+            </div>
             <ul>
-              <li>
-                <h4 class="nav-title">Bookery</h4>
+              <li class="nav-icons nav-link">
+                <i class="fa-solid fa-bookmark"></i>
               </li>
-              <li class="nav-center"><p>books</p></li>
-              <li class="nav-center"><p>audiobooks</p></li>
-              <li class="nav-center"><p>must-haves</p></li>
-
-              <li class="nav-icons"><i class="fa-solid fa-bookmark"></i></li>
-              <li class="nav-icons">
+              <li class="nav-icons nav-link">
                 <i class="fa-solid fa-cart-shopping"></i>
               </li>
-              <li class="nav-icons"><i class="fa-solid fa-user"></i></li>
+              <li class="nav-icons nav-link">
+                <i class="fa-solid fa-user"></i>
+              </li>
             </ul>
           </nav>
           <div class="row hero-info">
