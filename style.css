@@ -26,6 +26,31 @@ ul {
 li {
   display: inline-block;
 }
+h5,
+.vertical-text {
+  text-orientation: mixed;
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+}
+main {
+  background-color: var(--primary-color);
+  padding: 10rem;
+  border-radius: 5rem 5rem 0 0;
+}
+p {
+  font-family: var(--accent-font);
+}
+input {
+  padding-left: 10px;
+  border-radius: 3px;
+}
+section {
+  display: block;
+  margin: 3rem;
+  padding: 5rem;
+  background-color: var(--primary-color);
+  border-radius: 0 0 5rem 5rem;
+}
 .nav-link {
   display: inline-block;
 }
@@ -48,19 +73,8 @@ li {
   color: green;
   /* margin-left: 2rem; */
 }
-.vertical-text,
-h5 {
-  text-orientation: mixed;
-  writing-mode: vertical-rl;
-  transform: rotate(180deg);
-}
-main {
-  background-color: var(--primary-color);
-  padding: 10rem;
-  border-radius: 5rem 5rem 0 0;
-}
-p {
-  font-family: var(--accent-font);
+.fa-magnifying-glass {
+  margin-left: -0.25rem;
 }
 .hero {
   padding: 2rem;
@@ -69,6 +83,7 @@ p {
 .feature-img img {
   height: 600px;
   width: 400px;
+  margin-left: 3rem;
 }
 .hero img {
   width: 100px;
@@ -79,13 +94,6 @@ p {
   width: 20vw;
   font-size: 2.5rem;
   letter-spacing: 0.05rem;
-}
-section {
-  display: block;
-  margin: 3rem;
-  padding: 5rem;
-  background-color: var(--primary-color);
-  border-radius: 0 0 5rem 5rem;
 }
 
 /* section::before {
