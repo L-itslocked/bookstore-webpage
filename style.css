@@ -119,6 +119,18 @@ section {
   border-radius: 40px;
 } */
 
+/*must-haves styling*/
+.must-haves img {
+  width: 100%;
+  height: auto;
+}
+.must-haves {
+  background-color: #fff;
+  border-radius: 4px;
+  padding: 2rem;
+  margin: 0 1rem;
+}
+
 /* styling for slider */
 
 #slider {
