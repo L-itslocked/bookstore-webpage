@@ -58,6 +58,15 @@ section {
 #audiobooks {
   border-radius: 5rem 5rem 0 0;
 }
+.audiobook-item {
+  background-color: white;
+  border-radius: 10px;
+  margin: 0 1rem;
+
+  /* display: flex; */
+  align-content: center;
+  justify-content: center;
+}
 .audiobook-item i {
   padding: 0 10px;
 }
@@ -121,14 +130,18 @@ section {
 
 /*must-haves styling*/
 .must-haves img {
-  width: 100%;
-  height: auto;
+  width: 275px;
+  height: 275px;
+  overflow: hidden;
+  object-fit: cover;
+  border-radius: 5px;
+  border: 3px solid var(--primary-color);
 }
 .must-haves {
-  background-color: #fff;
-  border-radius: 4px;
-  padding: 2rem;
-  margin: 0 1rem;
+  background-color: var(--background-color);
+  border-radius: 10px;
+  padding: 1rem;
+  margin: 0 1.5rem;
 }
 
 /* styling for slider */
@@ -179,10 +192,32 @@ section {
 }
 .slide-img:hover a {
   opacity: 1;
-  /*link will pop-out with transform scale on hover*/
   transform: scale(1);
 }
-
+/* Must haves hover */
+.img-8 img,
+.img-9 img,
+.img-10 img {
+  width: 200px;
+  height: 200px;
+}
+.img-8,
+.img-9,
+.img-10 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 200px;
+  height: 200px;
+}
+.must-haves a {
+  text-decoration: none;
+  background-color: #fff;
+  color: var(--secondary-color);
+  padding: 1rem;
+  border-radius: 5px;
+}
 .img-1 {
   background-image: url(img/fourth-wing-bkcover.jpg);
 }
@@ -203,6 +238,15 @@ section {
 }
 .img-7 {
   background-image: url(img/midnightlibrary-bkcover.jpg);
+}
+.img-8 {
+  background-image: url(img/remote-1.png);
+}
+.img-9 {
+  background-image: url(img/kindle-unsplash.jpg);
+}
+.img-10 {
+  background-image: url(img/IMG_4109.png);
 }
 
 @media (max-width: 1600px) {
