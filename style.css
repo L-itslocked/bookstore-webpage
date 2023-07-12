@@ -58,6 +58,25 @@ h5,
   transform: rotate(180deg);
 }
 
+footer {
+  text-align: right;
+  color: var(--secondary-color);
+  margin: 0 1.5rem 1rem;
+  font-family: var(--accent-font);
+  font-size: 12px;
+}
+footer i {
+  font-size: 30px;
+  padding: 0 0 0 0.5rem;
+}
+footer a {
+  color: var(--accent-color);
+  text-decoration: none;
+}
+footer a:hover {
+  color: var(--secondary-color);
+  transition: 200ms ease-in-out;
+}
 #books {
   border-radius: 0 0 5rem 5rem;
   margin: -3rem 3rem 3rem 3rem;
