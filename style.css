@@ -58,7 +58,12 @@ section {
 #audiobooks {
   border-radius: 5rem 5rem 0 0;
 }
-
+.audiobook-item i {
+  padding: 0 10px;
+}
+.navbar-toggler {
+  color: var(--secondary-color);
+}
 .nav-link {
   display: inline-block;
 }
@@ -88,19 +93,13 @@ section {
   padding: 2rem;
   margin: 1rem;
 }
-.feature-img img {
+
+.hero-side-img {
+  width: 200px;
   height: auto;
-  width: 300px;
-  padding: 0 5rem 0 5rem;
-  /* margin: 0 
-  margin-left: 3rem;
-  margin-right: -10rem; */
+  /* margin: 3vw 0 3vw 0; */
 }
 
-/* .hero img {
-  width: 300px;
-  height: auto;
-} */
 .title-col h1 {
   font-family: var(--main-font);
   width: 20vw;
@@ -111,15 +110,91 @@ section {
   margin: 7vw 3vw 7vw -3vw;
 }
 
-/* section::before {
-  content: "";
-  width: var(--inlineP);
-  aspect-ratio: 1;
-  background: var(--accent-color);
-  background-image: linear-gradient(rgba(0, 0, 0, 0.2) 100%, transparent);
-  position: absolute;
-  top: 100%;
-  color: purple;
-  clip-path: polygon(0 0, 100% 0, 0 100%);
-  right: 0;
+/* .tns-outer [aria-controls],
+.tns-outer [data-action] {
+  background-color: var(--accent-color);
+  color: var(--secondary-color);
+  padding: 10px 25px;
+  margin: -2rem 1rem 2rem 0;
+  border-radius: 40px;
 } */
+
+/* styling for slider */
+
+#slider {
+  height: 500px;
+  border: 1px solid black;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  width: 1600px;
+  margin: auto;
+}
+
+.subcontainer {
+  width: 85%;
+  margin: auto;
+}
+
+.slide-img {
+  width: 100%;
+  height: 300px;
+  border-radius: 5px;
+  background-position: center;
+  background-size: cover;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.5s;
+}
+
+.slide-img:hover {
+  box-shadow: 0 0 0 200px rgba(0, 0, 0, 0.9) inset;
+}
+
+.slide-img a {
+  opacity: 0;
+  text-decoration: none;
+  transform: scale(0);
+  transition: 0.8s;
+  font-size: 1.5rem;
+  color: white;
+}
+.slide-img:hover a {
+  opacity: 1;
+  /*link will pop-out with transform scale on hover*/
+  transform: scale(1);
+}
+
+.img-1 {
+  background-image: url(img/fourth-wing-bkcover.jpg);
+}
+.img-2 {
+  background-image: url(img/day-of-fallen-night-bkcover.jpg);
+}
+.img-3 {
+  background-image: url(img/house-of-roots-ruin-bkcover.jpg);
+}
+.img-4 {
+  background-image: url(img/house-of-sky-breath-bkcover.jpg);
+}
+.img-5 {
+  background-image: url(img/daughter-of-moon-goddess-bkcover.jpg);
+}
+.img-6 {
+  background-image: url(img/song-of-achilles-bkcover.jpg);
+}
+.img-7 {
+  background-image: url(img/midnightlibrary-bkcover.jpg);
+}
+
+@media (max-width: 1600px) {
+  .container {
+    width: 100%;
+  }
+}
