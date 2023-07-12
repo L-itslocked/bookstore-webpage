@@ -148,7 +148,7 @@ section {
 
 #slider {
   height: 500px;
-  border: 1px solid black;
+ 
 
   display: flex;
   justify-content: center;
@@ -195,21 +195,17 @@ section {
   transform: scale(1);
 }
 /* Must haves hover */
-.img-8 img,
-.img-9 img,
-.img-10 img {
-  width: 200px;
-  height: 200px;
-}
+
 .img-8,
 .img-9,
 .img-10 {
+  margin: 0 3rem;
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
   width: 200px;
-  height: 200px;
+  height: 275px;
 }
 .must-haves a {
   text-decoration: none;
