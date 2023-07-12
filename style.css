@@ -84,6 +84,46 @@ footer a:hover {
 #audiobooks {
   border-radius: 5rem 5rem 0 0;
 }
+
+.feature-img img {
+  transform: scale3d(1, 1, 1);
+  transition: 400ms ease-in;
+  box-shadow: 10px 10px 20px 1px rgba(0, 0, 0, 0.23);
+  /* transform: perspective(90%); */
+  /* transform: matrix(20deg); */
+  position: relative;
+  display: inline-block;
+  transform-origin: 0, 50%;
+  transform: perspective(500) rotateY(10deg);
+  transition: 0.5s;
+  z-index: 3;
+}
+.feature-img img:hover {
+  transform: perspective(500) rotateY(0deg);
+  background: lighten($bookColor, 20);
+  box-shadow: 0 0 20px lighten($bookColor, 20);
+}
+.shelf {
+  height: 100px;
+  width: 87.18vmax;
+  margin-top: -2%;
+  margin-left: -25%;
+  display: flex;
+  transform: skew(-6deg, 0.03deg);
+  /* transform: perspective(30%); */
+  /* transform: skew(-30deg, 20deg); */
+  background-image: linear-gradient(
+    #eae1d3 0% 60%,
+    #fff 0 5%,
+    #f4f0eb 70% 100%
+  );
+  box-shadow: 10px 10px 20px 1px rgba(0, 0, 0, 0.23);
+  z-index: 1;
+  /* justify-content: space-around; */
+  /* border-radius: 2px; */
+}
+
+
 .audiobook-item {
   background-color: white;
   border-radius: 10px;
