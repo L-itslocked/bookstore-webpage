@@ -24,6 +24,12 @@
       integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
       crossorigin="anonymous"
     ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/min/tiny-slider.js"></script>
+
     <link rel="stylesheet" href="style.css" />
     <script
       src="https://kit.fontawesome.com/11e289fd06.js"
@@ -101,7 +107,8 @@
                 <div class="col vertical-text">Author of the Week</div>
                 <div class="col">
                   <img
-                    src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/047/125/original/For_the_Wolf_Book_Cover.jpeg?1664472456"
+                    src="https://m.media-amazon.com/images/I/911OwVymo3L._SY522_.jpg"
+                    class="hero-side-img"
                   />
                 </div>
               </div>
@@ -111,7 +118,8 @@
                 <div class="col vertical-text">Last listened</div>
                 <div class="col">
                   <img
-                    src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/047/125/original/For_the_Wolf_Book_Cover.jpeg?1664472456"
+                    src="https://m.media-amazon.com/images/I/A1saXZrUSVL._SY522_.jpg"
+                    class="hero-side-img"
                   />
                 </div>
               </div>
@@ -180,7 +188,10 @@
           </div>
           <!-- audiobook item card -->
           <div class="col-5 audiobook-item">
-            <img src="placeholder.jpg" />
+            <img
+              src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/047/125/original/For_the_Wolf_Book_Cover.jpeg?1664472456"
+              width="150"
+            />
             <h6>Title</h6>
             <p>Author</p>
             <span>
@@ -194,7 +205,10 @@
           </div>
           <!-- audiobook item card -->
           <div class="col-5 audiobook-item">
-            <img src="placeholder.jpg" />
+            <img
+              src="https://m.media-amazon.com/images/I/911OwVymo3L._SY522_.jpg"
+              width="150"
+            />
             <h6>Title</h6>
             <p>Author</p>
             <span>
@@ -210,12 +224,50 @@
       </section>
 
       <section class="shadow" id="must-haves">
-        <h5>Must-Haves</h5>
-        <!-- carousel of items (clicker, kindle, bookpillow, bookmarks, pageholder) -->
+        <div class="row">
+          <div class="col-1">
+            <h5>Must-Haves</h5>
+          </div>
+
+          <!-- carousel of items (clicker, kindle, bookpillow, bookmarks, pageholder) -->
+
+          <div class="slide_wrap">
+            <div class="slide_show">
+              <div class="slide_img">
+                <div class="slide">
+                  <img src="img/song-of-achilles-bkcover.jpg" alt="1" />
+                </div>
+                <div class="slide">
+                  <img src="img/daughter-of-moon-goddess-bkcover.jpg" alt="2" />
+                </div>
+                <div class="slide">
+                  <img src="img/fourth-wing-bkcover.jpg" alt="3" />
+                </div>
+                <div class="slide">
+                  <img src="img/house-of-roots-ruin-bkcover.jpg" alt="4" />
+                </div>
+                <div class="slide">
+                  <img src="img/midnightlibrary-bkcover.jpg" alt="5" />
+                </div>
+                <div class="slide">
+                  <img src="img/house-of-sky-breath-bkcover.jpg" alt="5" />
+                </div>
+                <div class="slide">
+                  <img src="img/day-of-fallen-night-bkcover.jpg" alt="5" />
+                </div>
+              </div>
+            </div>
+            <div class="slide_btn">
+              <a href="#" class="prev"><i class="fas fa-angle-left"></i></a>
+              <a href="#" class="next"><i class="fas fa-angle-right"></i></a>
+            </div>
+          </div>
+        </div>
       </section>
       <section class="shadow">
         <h5 id="bookmark">Your Picks</h5>
       </section>
     </div>
   </body>
+  <script src="script.js"></script>
 </html>
