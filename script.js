@@ -1,11 +1,13 @@
 let slider = tns({
   container: ".my-slider",
   slideBy: "1",
-  speed: 400,
+  speed: 100,
   nav: false,
   autoplay: true,
-//   controls: false,
+  controls: false,
+  arrowKey: true,
   autoplayButtonOutput: false,
+  autoplayHoverPause: true,
   responsive: {
     1600: {
       items: 4,
