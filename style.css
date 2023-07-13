@@ -37,9 +37,13 @@ main {
   padding: 10rem;
   border-radius: 5rem 5rem 0 0;
 }
-p {
+p,
+a {
   font-family: var(--accent-font);
   font-size: 12px;
+}
+i {
+  display: inline-block;
 }
 input {
   padding-left: 10px;
@@ -100,30 +104,48 @@ footer a:hover {
 }
 .feature-img img:hover {
   transform: perspective(500) rotateY(0deg);
-  background: lighten($bookColor, 20);
-  box-shadow: 0 0 20px lighten($bookColor, 20);
 }
 .shelf {
   height: 100px;
-  width: 87.18vmax;
+  width: 83.3vmax;
+  /* width: 87.18vmax; */
   margin-top: -2%;
-  margin-left: -25%;
+  margin-left: -20.2%;
+  /* margin-left: -25% ; */
   display: flex;
-  transform: skew(-6deg, 0.03deg);
+  transform: skew(-20deg, 10.5turn);
+  /* USED THIS LAST --- transform: skew(-6deg, 0.03deg); */
   /* transform: perspective(30%); */
   /* transform: skew(-30deg, 20deg); */
-  background-image: linear-gradient(
+  /* USED THIS LAST --- background-image: linear-gradient(
     #eae1d3 0% 60%,
     #fff 0 5%,
-    #f4f0eb 70% 100%
-  );
-  box-shadow: 10px 10px 20px 1px rgba(0, 0, 0, 0.23);
+    #f4f0eb 70% 99%,
+    #fff 70% 100%
+  ); */
+  background-image: linear-gradient(#eae1d3 70% 95%);
+  /* box-shadow: 10px 10px 20px 1px rgba(0, 0, 0, 0.23); */
   z-index: 1;
   /* justify-content: space-around; */
   /* border-radius: 2px; */
 }
-
-
+.shelf-2 {
+  background-image: linear-gradient(#fff 10% 20%, #f4f0eb 70% 100%);
+  z-index: 3;
+  height: 50px;
+  width: 83.3vmax;
+  transform: skew(10deg, 0.03deg);
+  margin-left: -21.93%;
+  box-shadow: 10px 10px 20px 1px rgba(0, 0, 0, 0.23);
+}
+.bestseller-item {
+  display: flex;
+  margin: 0 auto;
+  padding: 1rem;
+}
+.bestseller-item a {
+  margin-top: -1rem;
+}
 .audiobook-item {
   background-color: white;
   border-radius: 10px;
